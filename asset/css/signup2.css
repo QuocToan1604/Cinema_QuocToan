@@ -1,0 +1,20 @@
+body{
+    background-image: url(../images/login/background3.png);
+}
+
+.madeby{
+    position: absolute;
+    bottom: 5%;
+}
+
+.logincard_button{
+    margin-top: 8%;
+}
+
+.policies{
+    color: #5A637A;
+font-size: 12px;
+font-family: Roboto;
+font-weight: 400;
+word-wrap: break-word
+}

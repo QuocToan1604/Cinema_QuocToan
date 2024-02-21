@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../asset/css/frame.css">
+    <link rel="stylesheet" href="../asset/css/homepage.css">
+    <link rel="stylesheet" href="../asset/css/commingsoon_movie.css">
+    <script src="../script/slide.js" defer></script>
+
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () { $("#header").load("../compoments/header.html") });
+    $(function () { $("#footer").load("../compoments/footer.html") });
+    $(function () { $(".badge").load("../compoments/badge.html") });
+</script>
+
+<body>
+
+    <header id="header"></header>
+    <main>
+        <div class="container">
+                <div class="tik_film__akan">
+                <div class="news_header">
+                    <div class="header_news--left">
+                        <h2>Akan Datang</h2>
+                        <p>Tunggu kehadirannya di bioskop kesayangan kamu!</p>
+                    </div>
+                </div>
+                <div class="film_content">
+                    <ul class="film_list row">
+                        <li class="film-card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/film_poster1.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="film_header">
+                                    The Matrix: Resurrections
+                                </div>
+                                <div class="badge"></div>
+                            </div>
+                        </li>
+                        <li class="film-card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/film_poster2.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="film_header">
+                                    Resident Evil: Welcome to Raccoon City
+                                </div>
+                                <div class="badge"></div>
+                            </div>
+                        </li>
+
+                        </li>
+                        <li class="film-card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/film_poster3.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="film_header">
+                                    Sword Art Online: Progressive - Aria of a Starless Night
+                                </div>
+                                <div class="badge"></div>
+                            </div>
+                        </li>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

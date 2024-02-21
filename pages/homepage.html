@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../asset/css/frame.css">
+    <link rel="stylesheet" href="../asset/css/homepage.css">
+    <script src="../script/slide.js" defer></script>
+
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () { $("#header").load("../compoments/header.html") });
+    $(function () { $("#footer").load("../compoments/footer.html") });
+    $(function () { $(".badge").load("../compoments/badge.html") });
+</script>
+
+<body>
+
+    <header id="header"></header>
+    <main>
+        <div class="container">
+            <div class="wrapper2">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel2">
+                    <li class="card2">
+                        <div class="img2"><img src="../asset/images/homepage/Spiderman.png" alt="img" draggable="false">
+                        </div>
+                        <div class="namefilm">
+                            <h2>Spider-Man: No Way Home</h2>
+                        </div>
+                        <div class="cinema">
+                            <div class="badge"></div>
+                        </div>
+                    </li>
+                    <li class="card2">
+                        <div class="img2"><img src="../asset/images/homepage/Yowis_Ben.png" alt="img" draggable="false">
+                        </div>
+                        <div class="namefilm">
+                            <h2>Yowis Ben Finale</h2>
+                        </div>
+                        <div class="cinema">
+                            <div class="badge"></div>
+                        </div>
+                    </li>
+                    <li class="card2">
+                        <div class="img2"><img src="../asset/images/homepage/Ghostbusters_Afterlife.png" alt="img"
+                                draggable="false"></div>
+                        <div class="namefilm">
+                            <h2>Ghostbusters Afterlife</h2>
+                        </div>
+                        <div class="cinema">
+                            <div class="badge"></div>
+                        </div>
+                    </li>
+                    <li class="card2">
+                        <div class="img2"><img src="../asset/images/homepage/House_of_Gucci.png" alt="img"
+                                draggable="false"></div>
+                        <div class="namefilm">
+                            <h2>House of Gucci</h2>
+                        </div>
+                        <div class="cinema">
+                            <div class="badge"></div>
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="../asset/images/homepage/advertisements_1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../asset/images/homepage/advertisements_2.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../asset/images/homepage/advertisements_3.png" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <i id="prev" class="fa-solid fa-angle-left"></i>
+                    <i id="next" class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="tixnews">
+                <div class="news_header row">
+                    <div class="header_news--left col">
+                        <h2>TIX ID News</h2>
+                        <p>Berita tentang dunia perfilman terbaru untuk anda!</p>
+                    </div>
+                    <div class="header_news--right col">
+                        <a href="#">Lihat Semua</a>
+                    </div>
+                </div>
+                <div class="news_content">
+                    <ul class="news_list row">
+                        <li class="news_card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/TixNews1.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="card_spotlight">
+                                    Spotlight
+                                </div>
+                                <div class="card_header">
+                                    Spider-Man: No Way Home Rilis Trailer Terbaru.
+                                </div>
+                                <div class="card_time">08 Nov 2021 | TIX ID</div>
+                            </div>
+                        </li>
+                        <li class="news_card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/TixNews2.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="card_spotlight">
+                                    Spotlight
+                                </div>
+                                <div class="card_header">
+                                    Fakta Film Yowis Ben Finale Yang Perlu Kamu Ketahui Sebelum Nonton!.
+                                </div>
+                                <div class="card_time">09 Nov 2021 | TIX ID</div>
+                            </div>
+                        </li>
+                        <li class="news_card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/TixNews3.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="card_spotlight">
+                                    Spotlight
+                                </div>
+                                <div class="card_header">
+                                    Ghostbusters: Afterlife Hadir Menampilkan Variasi Hantu Baru
+                                </div>
+                                <div class="card_time">15 Nov 2021 | TIX ID</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tik_film__akan">
+                <div class="news_header">
+                    <div class="header_news--left">
+                        <h2>Akan Datang</h2>
+                        <p>Tunggu kehadirannya di bioskop kesayangan kamu!</p>
+                    </div>
+                    <div class="header_news--right">
+                        <a href="#">Lihat Semua</a>
+                    </div>
+                </div>
+                <div class="film_content">
+                    <ul class="film_list row">
+                        <li class="film-card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/film_poster1.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="film_header">
+                                    The Matrix: Resurrections
+                                </div>
+                                <div class="badge"></div>
+                            </div>
+                        </li>
+                        <li class="film-card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/film_poster2.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="film_header">
+                                    Resident Evil: Welcome to Raccoon City
+                                </div>
+                                <div class="badge"></div>
+                            </div>
+                        </li>
+
+                        </li>
+                        <li class="film-card col-xxl-4 col-md-6">
+                            <div class="card_img"><img src="../asset/images/homepage/film_poster3.png" alt=""></div>
+                            <div class="title_and_tag">
+                                <div class="film_header">
+                                    Sword Art Online: Progressive - Aria of a Starless Night
+                                </div>
+                                <div class="badge"></div>
+                            </div>
+                        </li>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge</title>
+    <link rel="stylesheet" href="../asset/css/frame.css">
+</head>
+    <style>
+        .badge{
+    display: flex;
+    justify-content: start;
+    padding: 0;
+}
+
+.badge .badge_list{
+    display: flex;
+    gap: 18px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+
+.badge_item .badge_item--frame a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#frame_red{
+    background: #EC1E2B;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+#frame_yellow{
+    background: linear-gradient(90deg, #F2C46F 0%, #C6943F 100%);
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+#frame_blue{
+    background: #000E62;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+    </style>
+<body>
+    <div class="badge">
+        <ul class="badge_list">
+            <li class="badge_item" id="frame_red">
+                <div class="badge_item--frame" ><a href="#">CGV</a></div>
+            </li>
+            <li class="badge_item" id="frame_yellow">
+                <div class="badge_item--frame"><a href="#">XXI</a></div>
+            </li>
+            <li class="badge_item" id="frame_blue">
+                <div class="badge_item--frame"><a href="#">CINÉPOLIS</a></div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

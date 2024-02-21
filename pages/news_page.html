@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../asset/css/frame.css">
+    <link rel="stylesheet" href="../asset/css/news.css">
+    <script src="../script/slide.js" defer></script>
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () { $("#header").load("../compoments/header.html") });
+    $(function () { $("#footer").load("../compoments/footer.html") });
+    $(function () { $(".badge").load("../compoments/badge.html") });
+</script>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="newscard_container">
+            <div class="header_news--left">
+                <h2>TIX ID News</h2>
+                <p>The latest news about the film world for you!</p>
+            </div>
+            <div class="news_search">
+                <div class="news_search--input col-4">
+                    <input type="search" placeholder="Search Post">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="news_search--dropdown">
+                    <select>
+                        <option value="option1">---Type---</option>
+                        <option value="option2">Spotlight</option>
+                        <option value="option3">News</option>
+                        <option value="option4">Video</option>
+                    </select>
+                </div>
+            </div>
+            <div class="news_titletag">
+                <div class="news_titletag--name">Spiderman</div>
+                <div class="news_titletag--name">Peter Parker</div>
+                <div class="news_titletag--name">Yowis Ben</div>
+                <div class="news_titletag--name">Ghostbusters</div>
+                <div class="news_titletag--name">Film Indonesia</div>
+                <div class="news_titletag--name">Aksi</div>
+            </div>
+            <div class="newscard row">
+                <img class="newscard_img col-5" src="../asset/images/news/TixNews1.png" alt="">
+                <div class="title_and_tag col-7">
+                    <div class="newscard_spotlight">
+                        Spotlight
+                    </div>
+                    <div class="newscard_header">
+
+                        Spider-Man: No Way Home Released The Latest Trailer.
+                    </div>
+                    <div class="newscard_decoration">Spider-Man: No Way Home is a movie that many people are looking
+                        forward to. This movie is a continuation of Peter Parker's story in...</div>
+                    <div class="newscard_time">17 Nov 2021 | TIX ID</div>
+                </div>
+            </div>
+            <div class="newscard news_card--last row">
+                <div class="title_and_tag col-7">
+                    <div class="newscard_spotlight">
+                        Spotlight
+                    </div>
+                    <div class="newscard_header">
+                        Facts About The Movie Yowis Ben Finale That You Need To Know Before Watching!
+                    </div>
+                    <div class="newscard_decoration">
+                        The film Yowis Ben Finale is the final film in the Yowis Ben trilogy. Films directed by Bayu Eko
+                        Moektito are often good...</div>
+                    <div class="newscard_time">06 Nov 2021 | TIX ID</div>
+                </div>
+                <img class="newscard_img col-5" src="../asset/images/news/TixNews2.png" alt="">
+            </div>
+            <div class="news_content">
+                <ul class="news_list row">
+                    <li class="news_card col-xxl-4 col-md-6">
+                        <div class="card_img"><img src="../asset/images/news/TixNews4.png" alt=""></div>
+                        <div class="title_and_tag">
+                            <div class="card_spotlight">
+                                News
+                            </div>
+                            <div class="card_header">
+                                Ghostbusters: Afterlife Comes Featuring New Ghost Variations
+                            </div>
+                            <div class="card_time">08 Nov 2021 | TIX ID</div>
+                        </div>
+                    </li>
+                    <li class="news_card col-xxl-4 col-md-6">
+                        <div class="card_img"><img src="../asset/images/news/TixNews5.png" alt=""></div>
+                        <div class="title_and_tag">
+                            <div class="card_spotlight">
+                                News
+                            </div>
+                            <div class="card_header">
+                                House of Gucci: The Story of Gucci's Sole Heir in 1955.
+                            </div>
+                            <div class="card_time">09 Nov 2021 | TIX ID</div>
+                        </div>
+                    </li>
+                    <li class="news_card col-xxl-4 col-md-6">
+                        <div class="card_img"><img src="../asset/images/news/TixNews6.png" alt=""></div>
+                        <div class="title_and_tag">
+                            <div class="card_spotlight">
+                                News
+                            </div>
+                            <div class="card_header">
+                                Donnie Yen's Action in the Latest Hong Kong Action Film
+                            </div>
+                            <div class="card_time">15 Nov 2021 | TIX ID</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+</body>
+
+</html>

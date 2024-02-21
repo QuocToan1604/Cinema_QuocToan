@@ -1,0 +1,148 @@
+footer {
+    background-color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 360px;
+}
+
+.divider {
+    border-top: 1px solid #BDC5D4;
+}
+
+body {
+    font-family: MyFooterFont;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+}
+
+.footer_container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: #001a3a;
+    padding: 80px 0 55px;
+}
+
+.footer_container_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+    padding:30px;
+    gap: 20px;
+}
+
+.footer_container_logo_text{
+    padding-right: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: MyFooterFont;
+}
+
+.footer_container_logo img{
+    width: 100%;
+    max-width: 145px;
+    max-height: 40px;
+}
+
+.footer_nav_list {
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.footer_nav_item {
+    font-size: 18px;
+}
+
+.footer_nav_item--extend {
+    display: flex;
+    font-weight: 400;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0;
+}
+
+.footer_nav_item--extend a {
+    font-size: 16px;
+    text-decoration: none
+}
+
+.footer_introduce_list {
+    display: flex;
+    gap: 18px;
+    padding: 0;
+}
+
+.icon_social i{
+    color: #fff;
+}
+
+.footer_nav_item--extend a {
+    color: #99a3b0;
+    font-family: MyFooterFont;
+    font-weight: bold;
+}
+
+.footer_nav_introduce {
+    display: inline-flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer_introduce_nav {
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    flex: 1;
+    flex-basis: 0;
+}
+
+.footer_introduce_app {
+    width: max(110px);
+}
+
+#info {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*  */
+.footer_madeby{
+    height: 60px;
+    background-color: #192c4f;
+    color: #fff;
+    font-family: MyFooterFont;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+}
+
+.footer_container_introduction{
+    font-family: MyFooterFont;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer_contact{
+    font-size: 12.25px;
+    margin-top: 1%;
+}

@@ -1,0 +1,322 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    gap: 30px;
+}
+
+.wrapper2 {
+    max-width: 1080px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper2 i {
+    height: 72px;
+    width: 72px;
+    background: #fff;
+    text-align: center;
+    line-height: 72px;
+    border-radius: 50%;
+    color: #333333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-100%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper2 i:first-child {
+    left: -100px;
+}
+
+.wrapper2 i:last-child {
+    right: -100px;
+}
+
+.wrapper2 .carousel2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/2)- 12px);
+    gap: 80px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel2.no-transition {
+    scroll-behavior: auto;
+
+}
+
+.carousel2.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel2::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel2.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel2 .card {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2 .img2 img {
+    width: 500px;
+    height: 707px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 52px;
+}
+
+.card2 .namefilm h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: #333333;
+    margin-bottom:  24px;
+}
+
+.card2 .cinema {
+    text-align: center;
+}
+
+/* ---------- */
+
+.slider {
+    width: 1296px;
+    width: 100%;
+    max-width: 100vw;
+    height: 304px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 1296px;
+    max-width: 100vw;
+    height: 304px;
+    object-fit: cover;
+    border-radius: 16px;
+
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons i {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+/*  */
+
+.tixnews,
+.tik_film__akan {
+    display: flex;
+    flex-direction: column;
+}
+
+.news_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_news--left h2 {
+    color: #333333;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.header_news--left p {
+    color: #5A637A;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.header_news--right{
+    text-align: end;
+
+}
+
+.header_news--right a {
+    color: #118EEA;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.news_list{
+    padding: 0;
+}
+
+.news_card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10%; */
+
+}
+
+.news_card .card_img img {
+    width: 100%;
+    height: 237px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 5%;
+}
+
+.news_card .title_and_tag {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.film-card .title_and_tag{
+    width: 85%;
+}
+
+.news_card .card_spotlight {
+    width: max-content;
+    padding: 8px 12px;
+    color: #333333;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: 1px #333D58 solid;
+}
+
+.news_card .card_header ,
+.film-card .film_header{
+    color: #333333;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word;
+    margin: 5% 0;
+}
+
+.news_card .card_time {
+    color: #5A637A;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-top: 4px;
+}
+
+
+/*  */
+.film_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.film-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* margin: 10% 0; */
+
+}
+
+.film-card .card_img img {
+    width: 100%;
+    height: 533px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.badge{
+    padding: 0 !important;
+}

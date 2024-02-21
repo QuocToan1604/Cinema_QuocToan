@@ -1,0 +1,129 @@
+body {
+    background-image: url(../images/login/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+}
+
+
+.logincard {
+    background-color: white;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    bottom: 10%;
+    padding: 3% 0 0 4%;
+    border-radius: 10px;
+}
+
+.vertical-line {
+    font-size: 20px;
+    color: #9DA8BE;
+    margin-right: 1px;
+}
+
+.logincard_title {
+    color: black;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-bottom: 5%;
+}
+
+.logincard_userphone,
+.logincard_password,
+.logincard_name,
+.logincard_email {
+    margin-bottom: 5%;
+}
+
+.logincard_userphone label,
+.logincard_password label,
+.logincard_name label,
+.logincard_email label {
+    color: #333333;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+    margin-bottom: 1%;
+
+}
+
+.logincard_userphone input,
+.logincard_password input,
+.logincard_name input,
+.logincard_email input {
+    border: none;
+    border-bottom: solid 1px #9DA8BE;
+    color: #9DA8BE;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-right: -16px;
+    outline: none;
+}
+
+
+
+.logincard_button button {
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+    word-wrap: break-word;
+    border-radius: 6px;
+    padding: 0.5% 1%;
+    text-align: center;
+}
+
+.login_button--blue {
+    background-color: #1A2C50;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.login_button--white {
+    background-color: #FFFFFF;
+    color: #1A2C50;
+    border-radius: solid 1px #5A637A;
+    margin-bottom: 5%;
+
+}
+
+
+
+.logincard_text--signup {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.logincard_text--decoration {
+    color: black;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.login_back {
+    display: flex;
+    position: fixed;
+    top: 8%;
+    left: 1%;
+}
+
+.login_back--TextPre {
+    color: white;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 450;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    margin-left: 1%;
+}

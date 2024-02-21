@@ -1,0 +1,12 @@
+body{
+    background-image: url(../images/login/Picture.png);
+}
+
+.madeby{
+    position: absolute;
+    bottom: 5%;
+}
+
+.logincard_button{
+    margin-top: 8%;
+}
