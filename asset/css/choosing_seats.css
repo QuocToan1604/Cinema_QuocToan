@@ -1,0 +1,73 @@
+.seats {
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+/* container */
+.seats_container {
+    padding: 80px 14% !important;
+
+}
+
+.seats_container--title {
+    color: #000;
+    font-family: MyHeaderFont;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 0 0 5px;
+}
+
+.seats_container--describe {
+    font-size: 16px;
+    font-family: MyFooterFont;
+}
+
+.seats_status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.seats_timepicker {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.seats_timepicker--time{
+    font-size: 20px;
+    font-family: MyFooterFont;
+    font-weight: bold;
+
+}
+
+.seat_status_nav {
+    display: flex;
+    /* justify-content: end; */
+}
+
+.seats_status--items {
+    font-family: MyFooterFont;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.seats_status--items i {
+    margin-right: 5px;
+}
+
+.items_sold {
+    color: #1A2C50;
+}
+
+.items_emty {
+    color: #fff;
+    border: 1px solid #9DA8BE;
+    border-radius: 2px;
+}
+
+.items_select {
+    color: #118EEA;
+}

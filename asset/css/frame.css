@@ -17,3 +17,8 @@
   font-family: MyFooterFont;
   src: url('../font/AvenirLTStd-Book.otf');
 }
+
+@font-face {
+  font-family: MyFont;
+  src: url('../font/AvenirLTStd-Medium.otf')
+}

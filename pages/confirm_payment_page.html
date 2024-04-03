@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Payment</title>
+    <link rel="stylesheet" href="../asset/css/frame.css">
+    <link rel="stylesheet" href="../asset/css/confirm_payment.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () { $("#header").load("../compoments/header.html") });
+    $(function () { $("#footer").load("../compoments/footer.html") });
+    $(function () { $(".time_schedule_input").load("../compoments/time_schelude_input.html") });
+</script>
+<header id="header"></header>
+
+<body>
+    <div class="confirm_payment">
+        <div class="payment_header">
+            <div class="payment_header--title">
+                PAYMENT CONFIRMATION
+            </div>
+            <div class="payment_header--describe">Confirm payment for the seats you ordered</div>
+        </div>
+        <div class="payment_container row">
+            <div class="payment_container--left col-5">
+                <div class="payment_schedule--details">Schedule Details</div>
+                <div class="payment_frame">
+                    <div class="payment_frame--label">Movie Title</div>
+                    <div class="payment_frame--name">SPIDERMAN NO WAY HOME</div>
+                </div>
+                <div class="divider"></div>
+                <div class="payment_frame">
+                    <div class="payment_frame--label">Date</div>
+                    <div class="payment_frame--name">THURSDAY, DECEMBER 17 2021</div>
+                </div>
+                <div class="divider"></div>
+                <div class="payment_include_frame">
+                    <div class="payment_frame">
+                        <div class="payment_frame--label">Class</div>
+                        <div class="payment_frame--name">REGULAR 2D</div>
+                    </div>
+                    <div class="payment_frame">
+                        <div class="payment_frame--label">
+                            O'clock</div>
+                        <div class="payment_frame--name">14:40</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="payment_frame">
+                    <div class="payment_frame--label">Tiket (3)</div>
+                    <div class="payment_frame--name">C8, C9, C10</div>
+                </div>
+                <div class="divider"></div>
+                <button class="payment_prev " id="open-popup_payment_confirm">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back
+                </button>
+            </div>
+            <div class="payment_container--center col-1"></div>
+            <div class="payment_container--right col-5">
+                <div class="payment_detail_card col-sm-12">
+                    <div class="payment_card_namecinema">
+                        Order Summary
+                    </div>
+                    <div class="payment_transaction_details">Transaction Details</div>
+                    <div class="payment_right_frame">
+                        <div class="payment_frame">
+                            <div class="payment_frame--label">REGULAR SEAT</div>
+                        </div>
+                        <div class="payment_frame">
+                            <div class="payment_frame--label">Rp. 50.000<span>X3</span></div>
+                        </div>
+                    </div>
+                    <div class="payment_right_frame">
+                        <div class="payment_frame">
+                            <div class="payment_frame--label">
+                                SERVICE FEES</div>
+                        </div>
+                        <div class="payment_frame">
+                            <div class="payment_frame--label">Rp. 3.000<span>X3</span></div>
+                        </div>
+                    </div>
+                    <div class="divider divider_transaction"></div>
+                    <div class="payment_transaction_details">Promo & Voucher</div>
+                    <div class="payment_right_frame">
+                        <div class="payment_frame">
+                            <div class="payment_frame--label">PROMO TIX ID</div>
+                        </div>
+                        <div class="payment_frame">
+                            <div class="payment_frame--label">-Rp. 70.000</div>
+                        </div>
+                    </div>
+                    <div class="divider divider_details"></div>
+                    <div class="payment_right_frame">
+                        <div class="payment_frame">
+                            <div class="payment_transaction_details">TOTAL PAY</div>
+                        </div>
+                        <div class="payment_frame">
+                            <div class="payment_transaction_details">Rp. 89.000</div>
+                        </div>
+                    </div>
+                    <div class="divider divider_details2"></div>
+                    <div class="payment_right_frame">
+                        <div class="payment_frame">
+                            <div class="payment_transaction_details">Payment Method</div>
+                        </div>
+                        <div class="payment_frame">
+                            <button id="open-popup_payment_transaction" class="payment_transaction--seeall">See
+                                All</button>
+                        </div>
+                    </div>
+                    <div class="payment_method">
+                        <img src="../asset/images/payment/momo.png" alt="">
+                        <img src="../asset/images/payment/paypal.png" alt="">
+                    </div>
+                    <div class="payment_method--des">*Ticket purchases cannot be cancelled</div>
+                    <div class="detail_card_button">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-container-transaction">
+        <div id="popup-content">
+            <div class="popup-transaction-header">
+                <div class="popup-transaction-title">Select Payment</div>
+                <button id="close-popup-transaction">
+                    <i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="popup-transaction-h1">
+                Virtual Wallet</div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/momo.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>MOMO</div>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/zalopay.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>zalo pay</div>
+                    <i class="fa-solid fa-check select-payment"></i>
+                </div>
+            </div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/paypal.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>paypal</div>
+                    <i class="fa-solid fa-check select-payment"></i>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="popup-transaction-h1">
+                Transfer Bank</div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/vietcombank.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>Vietcombank</div>
+                    <i class="fa-solid fa-check select-payment"></i>
+                </div>
+            </div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/MB.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>MB BANK</div>
+                    <i class="fa-solid fa-check select-payment"></i>
+                </div>
+            </div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/techcombank.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>techcom bank</div>
+                    <i class="fa-solid fa-check select-payment"></i>
+                </div>
+            </div>
+            <div class="popup-transaction-virtual ">
+                <img class="" src="../asset/images/payment/viettin.png" alt="">
+                <div class="transaction_virtual_name col-10">
+                    <div>Vietin bank</div>
+                    <i class="fa-solid fa-check select-payment"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-container-confirm">
+        <div id="popup-confirm-content">
+            <div class="popup-confirm-header">
+                <div class="popup-confirm-title">Want to go back?</div>
+                <button id="close-popup-confirm">
+                    <i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="popup-confirm-h1 col-10">
+                The seat you previously selected will be canceled and you will have to reselect</div>
+            <div class="popup-confirm-virtual ">
+                <div class="confirm_buttons">
+                    <button class="confirm-back">BACK</button><button class="confirm-cancel" id="close-popup-confirm2">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>document.getElementById("open-popup_payment_transaction").addEventListener("click", function () {
+            document.getElementById("popup-container-transaction").style.display = "block";
+        });
+
+        document.getElementById("close-popup-confirm").addEventListener("click", function () {
+            document.getElementById("popup-container-transaction").style.display = "none";
+        });
+        document.getElementById("open-popup_payment_confirm").addEventListener("click", function () {
+            document.getElementById("popup-container-confirm").style.display = "block";
+        });
+        document.getElementById("close-popup-confirm").addEventListener("click", function () {
+            document.getElementById("popup-container-confirm").style.display = "none";
+        });
+        document.getElementById("close-popup-confirm2").addEventListener("click", function () {
+            document.getElementById("popup-container-confirm").style.display = "none";
+        });
+    </script>
+</body>
+<footer id="footer"></footer>
+
+</html>

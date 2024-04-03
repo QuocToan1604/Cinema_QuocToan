@@ -1,0 +1,353 @@
+.movie {
+    color: #000;
+    font-family: MyHeaderFont;
+    background-color: #f8f8f8;
+
+}
+
+.movie--title {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+p{
+    margin-bottom: 0 !important;
+}
+
+/* overview */
+.movie_overview {
+    margin-bottom: 110px;
+}
+
+.movie_background {
+    background-image: url(../images/movie/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 225px 0 70px;
+    position: relative;
+}
+
+.movie_background::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.65;
+}
+
+.movie_container {
+    /* position: absolute; */
+    margin: 0 14%;
+    display: flex;
+    color: #fff;
+}
+
+.movie_poster {
+    margin-bottom: -190px;
+    z-index: 1;
+}
+
+.movie_poster--img {
+    max-width: 370px;
+    border-radius: 15px;
+}
+/* Movie detail */
+.movie_poster-details{
+    padding: 45px 0 0 80px;
+    z-index: 1;
+}
+
+.movie_poster--namefilm{
+    font-family: MyFooterFont;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.movie_poster--cinema{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-bottom: 16px;
+}
+
+.badge_cinema{
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.cgv{
+    background-color: #ee2e25;
+}
+
+.lotte{
+    background: rgb(3, 33, 101);
+}
+
+.badge_cinema{
+    margin-right: 10px;
+    padding: 3px 4px;
+}
+
+.movie_poster--describe{
+    font-family: MyFooterFont;
+    font-size: 15px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+    width: 80%;
+}
+
+.movie_poster-items{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.movie_poster-items--left{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #bac0ca;
+    padding: 7px 32px 7px 7px;
+    margin-right: 32px;
+}
+
+.movie_poster-items--left i{
+    font-size: 50px;
+}
+
+.poster-items--watch{
+    margin-left: 15px;
+    font-family: MyFooterFont;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+
+.poster-items--time{
+    font-family: MyFooterFont;
+    padding: 10px;
+    opacity: .7;
+    font-weight: 500;
+    font-size: 0.813rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Movie rate & buy ticket */
+.movie_container--bottom{
+    padding: 0 14%;
+}
+
+.movie_details{
+    padding: 45px 0 30px 450px;
+    margin-bottom: 110px;
+    width: 100%;
+}
+
+.movie_inner--wrapper{
+    margin: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie_inner--items{
+    padding: 30px;
+}
+
+.inner_point{
+    border-right: 1px solid #bac0ca;
+    padding-right: 32px;
+    margin-right: 32px;
+}
+
+.movie_inner--rating{
+    display: flex;
+}
+
+.point_star img{
+    width: 25px ;
+    height: auto;
+    margin-right: -4px;
+}
+
+.rating-source-container{
+    font-family: MyFooterFont;
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7e838c;
+}
+
+.inner_buyticket{
+    background: #001a3a;
+    border: 1px solid #192c4f;
+    box-sizing: border-box;
+    border-radius: 40px;
+    align-items: center;
+    padding: 15px 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffbf00 !important;
+    text-transform: uppercase;
+    line-height: 23px;
+}
+
+/* Video & trailer */
+
+.video_card_img {
+    border-radius: 4%;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    position: relative;
+}
+
+.btn_play {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 25%;
+}
+
+.video_card_namefilm {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* cast */
+.movie_card--card {
+    padding: 20px;
+}
+
+.movie_card--card:hover {
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.cast_card--img {
+    padding-right: 30px;
+}
+
+.cast_card--img img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.movie_card--card {
+    display: flex;
+}
+
+.cast_card--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cast_card--subtitle {
+    font-size: 12px;
+    color: #bac0ca;
+    font-weight: bold;
+    opacity: .6;
+}
+
+.cast_card--name {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    white-space: nowrap;
+    color: #333333;
+}
+
+/* Photo */
+.movie_video,
+.movie_cast,
+.movie_photo {
+    padding: 0 14%;
+    margin-bottom: 110px;
+}
+
+.photo_card_img {
+    height: 307px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Movie */
+.movie_more {}
+
+.cinemas_name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 20px !important;
+    display: block;
+    text-transform: uppercase;
+}
+
+.movie_movie--title {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 0 100px 60px;
+    margin-left: 7.5%;
+}
+
+.more_card_img {
+    height: 420px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: auto !important;
+    height: auto !important;
+    left: none !important;
+    top: 90% !important;
+}
+
+.swiper-pagination {
+    bottom: 2em !important;
+}
+
+.frame-tab {
+    margin-bottom: 5em;
+}
+
+.button-tab {
+    color: #000 !important;
+    border: solid 3px #000;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 24px;
+}

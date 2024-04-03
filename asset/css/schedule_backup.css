@@ -1,0 +1,317 @@
+.row{
+    margin-right: 0!important;
+}
+.schedule {
+    font-family: MyFooterHeader;
+    color: #000;
+    padding: 40px 10%;
+}
+
+.schedule_left--title {
+    color: #000;
+    font-family: MyHeaderFont;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 0 0 5px;
+}
+
+.schedule_left--describe {
+    font-family: MyFooterFont;
+    font-size: 15px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+    width: 80%;
+}
+
+/* slide date */
+
+.schedule_date {
+    padding: 0 40px !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.date_schedule_input {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px #5A637A solid;
+    padding: 18px;
+    text-align: center;
+
+}
+
+.date_schedule--day {
+    color: #5A637A;
+    font-size: 16px;
+    font-family: myFooterFont;
+    font-weight: bold;
+    word-wrap: break-word
+}
+
+.date_schedule--dayofweek {
+    color: #333333;
+    font-size: 19px;
+    font-family: MyheaderFont;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important;
+}
+
+.button-tab {
+    font-size: 40px;
+    color: #000 !important;
+}
+
+.divider {
+    margin: 22px 0;
+}
+
+/* Selection */
+.schedule_nation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.ic_location {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.schedule_nation select {
+    border: none;
+    font-family: MyFooterFont;
+    font-weight: 700;
+    font-size: 20px;
+    appearance: none;
+}
+
+.ic_down {
+    font-size: 15px;
+}
+
+/* search */
+.search_and_fillter {
+    margin-bottom: 25px;
+}
+
+.search_container {
+    border: solid 1px #000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_container input {
+    border: none;
+    padding: 8px;
+}
+
+.search_container i {
+    font-size: 20px;
+}
+
+.filter_container {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.filter_container select {
+    width: 25%;
+    border: none;
+}
+
+/* schedule cinema */
+.schedule_cinema--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule_cinema--left {
+    display: flex;
+    gap: 15px;
+}
+
+.schedule_cinema--title {
+    color: #333333;
+    font-size: 24px;
+    font-family: MyFooterFont;
+    font-weight: bold;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.schedule_cinema--cinema {
+    color: white;
+    font-size: 10px;
+    font-family: MyFooterFont;
+    font-weight: bold;
+    word-wrap: break-word;
+    padding: 5px 4px;
+    border-radius: 6px;
+}
+
+.cgv{
+    background-color: #EC1E2B;
+}
+
+.lotte{
+    background-color: #000E62
+}
+
+.galaxy{
+    background-color:#F2C46F;
+}
+
+.schedule_cinema_des {
+    color: #5A637A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin: 15px 0;
+}
+
+/* cinema class */
+.schedule_cinema_class {
+    margin-bottom: 20px;
+}
+
+.cinema_class--header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cinema_class--name {
+    color: #5A637A;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word;
+    font-family: MyFooterFont;
+    text-transform: uppercase;
+}
+
+.cinema_class--button{
+    
+}
+
+.cinema_class--items{
+    margin-bottom: 10px;
+}
+
+.cinema_class--items button{
+    border-radius: 5px;
+    padding: 4px 14px;
+    background-color: #fff;
+    border: solid 1px #9DA8BE;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* right */
+
+.schedule_card_img {
+    margin-bottom: 7%;
+}
+
+.schedule_card_img img {
+    width: 100%;
+    max-height: 364px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.description {
+    margin-top: 10px !important;
+    color: #333333;
+
+}
+
+.schedule_card_header {
+    font-family: MyFooterFont;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    word-wrap: break-word;
+    margin: 5px 0;
+}
+
+.description_left_item,
+.description_right_item {
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: MyFooterFont;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.schedule_detail_card {
+    margin-top: 45px;
+    padding: 25px 20px;
+    border: 1px #5A637A solid;
+    border-radius: 12px;
+}
+
+.detail_card_namecinema {
+    font-size: 28px;
+    font-family: MyHeaderFont;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+}
+
+.detail_card_datetime {
+    color: #5A637A;
+    font-size: 18px;
+    font-family: MyFooterFont;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin-bottom: 13px;
+}
+
+.detail_card_classandhour {
+    color: #333333;
+    font-size: 24px;
+    font-family: MyHeaderFont;
+    font-weight: 100;
+    line-height: 32px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.detail_card_description {
+    color: #9DA8BE;
+    font-size: 12px;
+    font-family: MyHeaderFont;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 36px;
+
+}
+
+.detail_card_button button {
+    width: 100%;
+    border: none;
+    background-color: #1A2C50;
+    color: #FFBE00;
+    font-size: 24px;
+    font-family: MyFooterFont;
+    font-weight: bold;
+    line-height: 32px;
+    word-wrap: break-word;
+    border-radius: 12px;
+    padding: 16px 0;
+}
