@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schedule</title>
+    <link rel="stylesheet" href="../asset/css/frame.css">
+    <link rel="stylesheet" href="../asset/css/schedule_backup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () { $("#header").load("../compoments/header.html") });
+    $(function () { $("#footer").load("../compoments/footer.html") });
+    $(function () { $(".time_schedule_input").load("../compoments/time_schelude_input.html") });
+</script>
+<header id="header"></header>
+
+<body>
+    <div class="schedule row">
+        <div class="schedule_container--left col-7">
+            <div class="schedule_left--header">
+                <div class="schedule_left--title">
+                    Time Table
+                </div>
+                <div class="schedule_left--describe">Select the schedule of the cinema you want to watch</div>
+            </div>
+            <div class="schedule_date swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">15 Des</div>
+                        <div class="date_schedule--dayofweek">MON</div>
+                    </div>
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">16 Des</div>
+                        <div class="date_schedule--dayofweek">TUE</div>
+                    </div>
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">17 Des</div>
+                        <div class="date_schedule--dayofweek">wed</div>
+                    </div>
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">18 Des</div>
+                        <div class="date_schedule--dayofweek">thu</div>
+                    </div>
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">19 Des</div>
+                        <div class="date_schedule--dayofweek">fri</div>
+                    </div>
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">20 Des</div>
+                        <div class="date_schedule--dayofweek">sat</div>
+                    </div>
+                    <div class="date_schedule_input swiper-slide">
+                        <div class="date_schedule--day">21 Des</div>
+                        <div class="date_schedule--dayofweek">sun</div>
+                    </div>
+                </div>
+                <div class="slider-tab">
+                    <i class="fa-solid fa-angle-right button-tab swiper-button-next"></i>
+                    <i class="fa-solid fa-angle-left button-tab swiper-button-prev"></i>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="schedule_nation">
+                <i class="ic_location fa-solid fa-location-dot"></i>
+                <select>
+                    <option value="option1">VIET NAM</option>
+                    <option value="option2">USA</option>
+                    <option value="option3">JAKARTA</option>
+                </select>
+                <i class="ic_down fa-solid fa-angle-down"></i>
+            </div>
+            <div class="search_and_fillter row">
+                <div class="search_container col-7">
+                    <input class="col-10" type="text" id="searchInput" placeholder="Grand Indonesia">
+                    <i class="col-1 fa fa-search search-icon"></i>
+                </div>
+                <div class="filter_container col-5">
+                    <select class="filter_Studio ">
+                        <option value="option1">Studio</option>
+                        <option value="option2">XXI</option>
+                        <option value="option3">2D</option>
+                    </select>
+                    <select class="filter_Sortir ">
+                        <option value="option1">Sortir</option>
+                        <option value="option2">Terdekat</option>
+                        <option value="option3">Harga Termurah</option>
+                        <option value="option4">Alfabet</option>
+                    </select>
+                    <select class="filter_bioskop ">
+                        <option value="option1">Bioskop</option>
+                        <option value="option2">Terdekat</option>
+                        <option value="option3">gfh</option>
+                        <option value="option4">Alfabet</option>
+                    </select>
+                </div>
+            </div>
+            <div class="schedule_cinema">
+                <div class="schedule_cinema--header">
+                    <div class="schedule_cinema--left">
+                        <img src="../asset/images/choosing_schedule/Star.svg" alt="">
+                        <div class="schedule_cinema--title">Grand indonesia cgv</div>
+                    </div>
+                    <div class="schedule_cinema--cinema cgv">CGV</div>
+                </div>
+                <div class="schedule_cinema_des">
+                    JL. MH. TAHMRIN NO.1
+                </div>
+                <div class="schedule_cinema_class row">
+                    <div class="cinema_class--header">
+                        <div class="cinema_class--name">regular 2d</div>
+                        <div class="cinema_class--price">Rp. 45.000 - 50.000</div>
+                    </div>
+                    <div class="cinema_class--button col-7 row row-cols-5">
+                        <div class="cinema_class--items col">
+                            <button>
+                                11:00
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                13:45
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                14:40
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                15:40
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                17:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                18:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                20:00
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                21:00
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule_cinema_class row">
+                    <div class="cinema_class--header">
+                        <div class="cinema_class--name">gold class 2d</div>
+                        <div class="cinema_class--price">Rp. 100.000</div>
+                    </div>
+                    <div class="cinema_class--button col-7 row row-cols-5">
+                        <div class="cinema_class--items col">
+                            <button>
+                                11:00
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                13:45
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                14:40
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                15:40
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                17:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                18:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                20:00
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                21:00
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule_cinema_class row">
+                    <div class="cinema_class--header">
+                        <div class="cinema_class--name">velvet 2d</div>
+                        <div class="cinema_class--price">Rp. 100.000</div>
+                    </div>
+                    <div class="cinema_class--button col-7 row row-cols-5">
+                        <div class="cinema_class--items col">
+                            <button>
+                                11:00
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                13:45
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                14:40
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                15:40
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                17:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                18:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                20:00
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                21:00
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule_cinema">
+                <div class="schedule_cinema--header">
+                    <div class="schedule_cinema--left">
+                        <img src="../asset/images/choosing_schedule/Star.svg" alt="">
+                        <div class="schedule_cinema--title">MANGGA DUA SQUARE LOTTE</div>
+                    </div>
+                    <div class="schedule_cinema--cinema lotte">LOTTE</div>
+                </div>
+                <div class="schedule_cinema_des">
+                    JL. MH. TAHMRIN NO.1
+                </div>
+                <div class="schedule_cinema_class row">
+                    <div class="cinema_class--header">
+                        <div class="cinema_class--name">2d</div>
+                        <div class="cinema_class--price">Rp. 30.000</div>
+                    </div>
+                    <div class="cinema_class--button col-7 row row-cols-5">
+                        <div class="cinema_class--items col">
+                            <button>
+                                13:45
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                17:15
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                20:00
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule_cinema">
+                <div class="schedule_cinema--header">
+                    <div class="schedule_cinema--left">
+                        <img src="../asset/images/choosing_schedule/Star.svg" alt="">
+                        <div class="schedule_cinema--title">PLAZA INDONESIA Galaxy</div>
+                    </div>
+                    <div class="schedule_cinema--cinema galaxy">GALAXY</div>
+                </div>
+                <div class="schedule_cinema_des">
+                    JL. MH. TAHMRIN NO.1
+                </div>
+                <div class="schedule_cinema_class row">
+                    <div class="cinema_class--header">
+                        <div class="cinema_class--name">2d</div>
+                        <div class="cinema_class--price">Rp. 30.000</div>
+                    </div>
+                    <div class="cinema_class--button col-7 row row-cols-5">
+                        <div class="cinema_class--items col">
+                            <button>
+                                12:10
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                16:45
+                            </button>
+                        </div>
+                        <div class="cinema_class--items col">
+                            <button>
+                                19:45
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="schedule_container--center col"></div>
+        <div class="schedule_container--right col-4">
+            <div class="schedule_card row">
+                <div class="schedule_card_img col-sm-12"><img src="../asset/images/homepage/Spiderman.png" alt="">
+                </div>
+                <div class="schedule_card_header col-sm-12">SPIDERMAN: NO WAY HOME</div>
+                <div class="description row">
+                    <div class="description_left col-4">
+                        <div class="description_left_item ">Genre</div>
+                        <div class="description_left_item ">Durasi</div>
+                        <div class="description_left_item ">Sutradara</div>
+                        <div class="description_left_item ">Rating Usia</div>
+                    </div>
+                    <div class="description_right col-8">
+                        <div class="description_right_item ">Action</div>
+                        <div class="description_right_item ">2 jam 28 menit</div>
+                        <div class="description_right_item ">Jon Watts</div>
+                        <div class="description_right_item ">SU</div>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule_detail_card col-sm-12">
+                <div class="detail_card_namecinema">
+                    GRAND INDONESIA CGV
+                </div>
+                <div class="detail_card_datetime">
+                    Kamis,16 Desember 2021
+                </div>
+                <div class="detail_card_classandhour row">
+                    <div class="card_class col-9">REGULAR 2D</div>
+                    <div class="card_hour col-3">14:40</div>
+                </div>
+                <div class="detail_card_description">
+                    * Pemilihan kursi dapat dilakukan setelah in
+                </div>
+                <div class="detail_card_button">
+                    <button>BELI SEKARANG</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script/choosing_scheldule.js"></script>
+</body>
+<footer id="footer"></footer>
+
+</html>

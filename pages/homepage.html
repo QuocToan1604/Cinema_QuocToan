@@ -7,193 +7,363 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="../asset/css/frame.css">
     <link rel="stylesheet" href="../asset/css/homepage.css">
-    <script src="../script/slide.js" defer></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(function () { $("#header").load("../compoments/header.html") });
     $(function () { $("#footer").load("../compoments/footer.html") });
-    $(function () { $(".badge").load("../compoments/badge.html") });
 </script>
-
+<header id="header"></header>
 <body>
-
-    <header id="header"></header>
-    <main>
-        <div class="container">
-            <div class="wrapper2">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel2">
-                    <li class="card2">
-                        <div class="img2"><img src="../asset/images/homepage/Spiderman.png" alt="img" draggable="false">
-                        </div>
-                        <div class="namefilm">
-                            <h2>Spider-Man: No Way Home</h2>
-                        </div>
-                        <div class="cinema">
-                            <div class="badge"></div>
-                        </div>
-                    </li>
-                    <li class="card2">
-                        <div class="img2"><img src="../asset/images/homepage/Yowis_Ben.png" alt="img" draggable="false">
-                        </div>
-                        <div class="namefilm">
-                            <h2>Yowis Ben Finale</h2>
-                        </div>
-                        <div class="cinema">
-                            <div class="badge"></div>
-                        </div>
-                    </li>
-                    <li class="card2">
-                        <div class="img2"><img src="../asset/images/homepage/Ghostbusters_Afterlife.png" alt="img"
-                                draggable="false"></div>
-                        <div class="namefilm">
-                            <h2>Ghostbusters Afterlife</h2>
-                        </div>
-                        <div class="cinema">
-                            <div class="badge"></div>
-                        </div>
-                    </li>
-                    <li class="card2">
-                        <div class="img2"><img src="../asset/images/homepage/House_of_Gucci.png" alt="img"
-                                draggable="false"></div>
-                        <div class="namefilm">
-                            <h2>House of Gucci</h2>
-                        </div>
-                        <div class="cinema">
-                            <div class="badge"></div>
-                        </div>
-                    </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
+    <div class="home">
+        <div class="home_event_slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider1.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider2.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider3.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider4.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider5.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider6.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider7.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider8.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider9.jpeg" alt="">
+                    <img class="slider_card_img swiper-slide" src="../asset/images/home/slider10.jpeg" alt="">
+                </div>
+                <div class="slider-tab">
+                    <i class="fa-solid fa-circle-chevron-right slider-button swiper-button-next"></i>
+                    <i class="fa-solid fa-circle-chevron-left slider-button swiper-button-prev"></i>
+                </div>
+              </div>
+        </div>
+        <div class="home_show_cinemas row">
+            <div class="home_title col-12">
+                NOW SHOWING IN CINEMAS
             </div>
-
-            <div class="slider">
-                <div class="list">
-                    <div class="item">
-                        <img src="../asset/images/homepage/advertisements_1.png" alt="">
+            <div class="swiper show_cinemas_swiper">
+                <div class="swiper-wrapper">
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema1.jpeg" alt="">
+                        <div class="cinemas_name">PEMANDI JENAZAH</div>
                     </div>
-                    <div class="item">
-                        <img src="../asset/images/homepage/advertisements_2.png" alt="">
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema2.jpeg" alt="">
+                        <div class="cinemas_name">DEALOVA</div>
                     </div>
-                    <div class="item">
-                        <img src="../asset/images/homepage/advertisements_3.png" alt="">
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema3.jpeg" alt="">
+                        <div class="cinemas_name">SINDEN GAIB</div>
                     </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema4.jpeg" alt="">
+                        <div class="cinemas_name">WOMEN FROM ROTE ISLAND</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema5.jpeg" alt="">
+                        <div class="cinemas_name">AGAK LAEN</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema6.jpeg" alt="">
+                        <div class="cinemas_name">BOB MARLEY: ONE LOVE</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema7.jpg" alt="">
+                        <div class="cinemas_name">PASUTRI GAJE</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema8.jpg" alt="">
+                        <div class="cinemas_name">LAMPIR</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema9.jpeg" alt="">
+                        <div class="cinemas_name">MADAME WEB</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema10.jpg" alt="">
+                        <div class="cinemas_name">EKSIL</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema11.jpg" alt="">
+                        <div class="cinemas_name">SPY X FAMILY CODE: WHITE</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema12.jpg" alt="">
+                        <div class="cinemas_name">DREAM SCENARIO</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema13.jpg" alt="">
+                        <div class="cinemas_name">ARGYLLE</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema14.jpg" alt="">
+                        <div class="cinemas_name">TERI BAATON MEIN AISA ULJHA JIYA</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema15.jpg" alt="">
+                        <div class="cinemas_name">BABY SHARK'S BIG MOVIE</div>
+                    </div>
+                    
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema16.jpeg" alt="">
+                        <div class="cinemas_name">THE HOLDOVERS</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema17.jpg" alt="">
+                        <div class="cinemas_name">(FS. A1) DEMON SLAYER: KIMETSU NO YAIBA - TO THE HASHIRA TRAINING</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/cinema18.jpeg" alt="">
+                        <div class="cinemas_name">(FS. B1) DEMON SLAYER: KIMETSU NO YAIBA - TO THE HASHIRA TRAINING</div>
+                    </div>
+                    
                 </div>
-                <div class="buttons">
-                    <i id="prev" class="fa-solid fa-angle-left"></i>
-                    <i id="next" class="fa-solid fa-angle-right"></i>
+                <div class="swiper-pagination"></div>
+                <div class="frame-tab">
+                    <i class="fa-solid fa-arrow-right button-tab swiper-button-next"></i>
+                    <i class="fa-solid fa-arrow-left button-tab swiper-button-prev"></i>
                 </div>
-                <ul class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
-            <div class="tixnews">
-                <div class="news_header row">
-                    <div class="header_news--left col">
-                        <h2>TIX ID News</h2>
-                        <p>Berita tentang dunia perfilman terbaru untuk anda!</p>
+        </div>
+        <div class="home_spotlight">
+            <div class="home_title">
+                SPOTLIGHT
+            </div>
+            <div class="swiper video_trailer_swiper">
+                <div class="swiper-wrapper">
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight1.jpeg" alt="">
+                        <div class="spotlight_name">TIX ID BOX OFFICE (12 - 18 Februari)</div>
                     </div>
-                    <div class="header_news--right col">
-                        <a href="#">Lihat Semua</a>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight2.jpeg" alt="">
+                        <div class="spotlight_name">Berniat Liburan, Kelompok ini Berakhir di Sarang M...</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight3.jpeg" alt="">
+                        <div class="spotlight_name">TIX ID Box Office (5-11 Februari)</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight4.jpeg" alt="">
+                        <div class="spotlight_name">Sudah Tayang, Jangan Lewatkan 'Pasutri Gaje' di Bi...</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight5.jpeg" alt="">
+                        <div class="spotlight_name">TIX ID Box Office (29 Januari - 4 Februari 2024)</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight6.jpeg" alt="">
+                        <div class="spotlight_name">'No Way Up' Berikan Kengerian Teror Hiu di Dalam L...</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight7.jpeg" alt="">
+                        <div class="spotlight_name">Sudah Tayang, Film Argylle Miliki Dunia Yang Sama ...</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight8.jpeg" alt="">
+                        <div class="spotlight_name">TIX ID Box Office (22-28 Januari 2024)</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/spotlight9.jpeg" alt="">
+                        <div class="spotlight_name">TIX ID Box Office Minggu Ini (15-21 Januari 2024)</div>
                     </div>
                 </div>
-                <div class="news_content">
-                    <ul class="news_list row">
-                        <li class="news_card col-xxl-4 col-md-6">
-                            <div class="card_img"><img src="../asset/images/homepage/TixNews1.png" alt=""></div>
-                            <div class="title_and_tag">
-                                <div class="card_spotlight">
-                                    Spotlight
-                                </div>
-                                <div class="card_header">
-                                    Spider-Man: No Way Home Rilis Trailer Terbaru.
-                                </div>
-                                <div class="card_time">08 Nov 2021 | TIX ID</div>
-                            </div>
+                <div class="swiper-pagination"></div>
+                <div class="frame-tab">
+                    <i class="fa-solid fa-arrow-right button-tab swiper-button-next"></i>
+                    <i class="fa-solid fa-arrow-left button-tab swiper-button-prev"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="home_tixnow">
+            <div class="home_title">
+                Tix now
+            </div>
+            <div class="tixnow_container row">
+                <div class="tixnow_container_posting col-8">
+                    <div class="tixnow_posting--card row">
+                        <img class="col-5" src="../asset/images/home/post1.jpeg" alt="">
+                        <div class="posting_card--content col-7">
+                            <div class="posting_card--title">Dapatkan Segudang Penghargaan, 'The Holdovers' Segera Tayang di Indonesia!</div>
+                            <div class="posting_card--date">Wednesday, 21 February 2024</div>
+                            <div class="posting_card--decoration">Kamu lagi mencari sesuatu yang beda? Ada film The Holdovers yang sudah bisa kamu beli tiketnya di TIX ID. The Holdovers adalah film drama komedi...</div>
+                        </div>
+                    </div>
+                    <div class="tixnow_posting--card row">
+                        <img class="col-5" src="../asset/images/home/post2.jpeg" alt="">
+                        <div class="posting_card--content col-7">
+                            <div class="posting_card--title">Dapatkan Segudang Penghargaan, 'The Holdovers' Segera Tayang di Indonesia!</div>
+                            <div class="posting_card--date">Wednesday, 21 February 2024</div>
+                            <div class="posting_card--decoration">Kamu lagi mencari sesuatu yang beda? Ada film The Holdovers yang sudah bisa kamu beli tiketnya di TIX ID. The Holdovers adalah film drama komedi...</div>
+                        </div>
+                    </div>
+                    <div class="tixnow_posting--card row">
+                        <img class="col-5" src="../asset/images/home/post3.jpeg" alt="">
+                        <div class="posting_card--content col-7">
+                            <div class="posting_card--title">Dapatkan Segudang Penghargaan, 'The Holdovers' Segera Tayang di Indonesia!</div>
+                            <div class="posting_card--date">Wednesday, 21 February 2024</div>
+                            <div class="posting_card--decoration">Kamu lagi mencari sesuatu yang beda? Ada film The Holdovers yang sudah bisa kamu beli tiketnya di TIX ID. The Holdovers adalah film drama komedi...</div>
+                        </div>
+                    </div>
+                    <div class="tixnow_posting--card row">
+                        <img class="col-5" src="../asset/images/home/post4.jpeg" alt="">
+                        <div class="posting_card--content col-7">
+                            <div class="posting_card--title">Dapatkan Segudang Penghargaan, 'The Holdovers' Segera Tayang di Indonesia!</div>
+                            <div class="posting_card--date">Wednesday, 21 February 2024</div>
+                            <div class="posting_card--decoration">Kamu lagi mencari sesuatu yang beda? Ada film The Holdovers yang sudah bisa kamu beli tiketnya di TIX ID. The Holdovers adalah film drama komedi...</div>
+                        </div>
+                    </div>
+                    <div class="tixnow_posting--card row">
+                        <img class="col-5" src="../asset/images/home/post5.jpeg" alt="">
+                        <div class="posting_card--content col-7">
+                            <div class="posting_card--title">Dapatkan Segudang Penghargaan, 'The Holdovers' Segera Tayang di Indonesia!</div>
+                            <div class="posting_card--date">Wednesday, 21 February 2024</div>
+                            <div class="posting_card--decoration">Kamu lagi mencari sesuatu yang beda? Ada film The Holdovers yang sudah bisa kamu beli tiketnya di TIX ID. The Holdovers adalah film drama komedi...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tixnow_container_sidebar col-4">
+                    <ul>
+                        <li class="tixnow_sidebar--name sidebar_li">
+                            MORE NEWS
                         </li>
-                        <li class="news_card col-xxl-4 col-md-6">
-                            <div class="card_img"><img src="../asset/images/homepage/TixNews2.png" alt=""></div>
-                            <div class="title_and_tag">
-                                <div class="card_spotlight">
-                                    Spotlight
-                                </div>
-                                <div class="card_header">
-                                    Fakta Film Yowis Ben Finale Yang Perlu Kamu Ketahui Sebelum Nonton!.
-                                </div>
-                                <div class="card_time">09 Nov 2021 | TIX ID</div>
-                            </div>
+                        <li class="sidebar_li">
+                            <h5><a class="sidebar_title" href="">HAJ4TAN PODKESMAS Yang Lagi Rame Diomongin, Tayang Eksklusif di Bioskop Online!</a></h5>
                         </li>
-                        <li class="news_card col-xxl-4 col-md-6">
-                            <div class="card_img"><img src="../asset/images/homepage/TixNews3.png" alt=""></div>
-                            <div class="title_and_tag">
-                                <div class="card_spotlight">
-                                    Spotlight
-                                </div>
-                                <div class="card_header">
-                                    Ghostbusters: Afterlife Hadir Menampilkan Variasi Hantu Baru
-                                </div>
-                                <div class="card_time">15 Nov 2021 | TIX ID</div>
-                            </div>
+                        <li class="sidebar_li">
+                            <h5><a class="sidebar_title" href="">Segera Tayang, Tiket 'Madame Web' Sekarang Juga!</a></h5>
+                        </li>
+                        <li class="sidebar_li">
+                            <h5><a class="sidebar_title" href="">Intip Sinopsis 'Kupu-Kupu Kertas' Film Terbaru Amanda Manopo!</a></h5>
+                        </li>
+                        <li class="sidebar_li">
+                            <h5><a class="sidebar_title" href="">Ngeri, 'Munkar' Kisahkan Teror Korban Bully di Pesantren!</a></h5>
+                        </li>
+                        <li class="sidebar_li">
+                            <h5><a class="sidebar_title" href="">Ngeri, Ngakak, Semua Jadi Satu di Film 'Agak Laen'!</a></h5>
+                        </li>
+                        <li>
+                            <div class="sliderbar_button">VIEW MORE ARTICLE</div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="tik_film__akan">
-                <div class="news_header">
-                    <div class="header_news--left">
-                        <h2>Akan Datang</h2>
-                        <p>Tunggu kehadirannya di bioskop kesayangan kamu!</p>
+        </div>
+        <div class="home_video_trailer">
+            <div class="home_video_trailer--title home_title">
+                Video & trailer
+            </div>
+            <div class="swiper video_trailer_swiper">
+                <div class="swiper-wrapper">
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video1.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">OFFICIAL TEASER SIKSA KUBUR | WRITTEN & DIRECTED B...</div>
                     </div>
-                    <div class="header_news--right">
-                        <a href="#">Lihat Semua</a>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video2.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Kung Fu Panda 4 | Di Bioskop 6 Maret</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video3.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Dune: Part Two | London Premiere</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video4.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Official Trailer - Ali Topan | SEDANG TAYANG DI BI...</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video5.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Bob Marley: One Love - Di Bioskop 21 Februari</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video6.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Alur Cerita DUNE (2021) | TIX ID</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video7.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">TWISTERS | Official Trailer</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video8.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Godzilla x Kong: The New Empire | Official Trailer...</div>
+                    </div>
+                    <div class="video_card swiper-slide">
+                        <img class="video_card_img" src="../asset/images/home/video9.jpeg" alt="">
+                        <img class="btn_play" src="../asset/images/home/btn_play.png" alt="">
+                        <div class="video_card_namefilm">Kingdom of the Planet of the Apes | Official Trail...</div>
                     </div>
                 </div>
-                <div class="film_content">
-                    <ul class="film_list row">
-                        <li class="film-card col-xxl-4 col-md-6">
-                            <div class="card_img"><img src="../asset/images/homepage/film_poster1.png" alt=""></div>
-                            <div class="title_and_tag">
-                                <div class="film_header">
-                                    The Matrix: Resurrections
-                                </div>
-                                <div class="badge"></div>
-                            </div>
-                        </li>
-                        <li class="film-card col-xxl-4 col-md-6">
-                            <div class="card_img"><img src="../asset/images/homepage/film_poster2.png" alt=""></div>
-                            <div class="title_and_tag">
-                                <div class="film_header">
-                                    Resident Evil: Welcome to Raccoon City
-                                </div>
-                                <div class="badge"></div>
-                            </div>
-                        </li>
+                <div class="swiper-pagination"></div>
+                <div class="frame-tab">
+                    <i class="fa-solid fa-arrow-right button-tab swiper-button-next"></i>
+                    <i class="fa-solid fa-arrow-left button-tab swiper-button-prev"></i>
 
-                        </li>
-                        <li class="film-card col-xxl-4 col-md-6">
-                            <div class="card_img"><img src="../asset/images/homepage/film_poster3.png" alt=""></div>
-                            <div class="title_and_tag">
-                                <div class="film_header">
-                                    Sword Art Online: Progressive - Aria of a Starless Night
-                                </div>
-                                <div class="badge"></div>
-                            </div>
-                        </li>
+                </div>
+            </div>
 
-                        </li>
-                    </ul>
+        </div>
+        <div class="home_our_features">
+            <div class="home_title">
+                Our Features
+            </div>
+            <div class="swiper our_features_swiper ">
+                <div class="swiper-wrapper">
+                    <img src="../asset/images/home/ourfeatures1.png" class="swiper-slide" alt="">
+                    <img src="../asset/images/home/ourfeatures2.png" class="swiper-slide" alt="">
+                    <img src="../asset/images/home/ourfeatures3.png" class="swiper-slide" alt="">
+                    <img src="../asset/images/home/ourfeatures4.png" class="swiper-slide" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="frame-tab">
+                    <i class="fa-solid fa-arrow-right button-tab swiper-button-next"></i>
+                    <i class="fa-solid fa-arrow-left button-tab swiper-button-prev"></i>
+
                 </div>
 
             </div>
         </div>
-    </main>
-    <footer id="footer"></footer>
+        <div class="home_app_container">
+            <div class="home_app_container--title">
+                ENJOY THE BEST MOVIE AND ENTERTAINMENT, KEEP UP TO DATE WITH THE LATEST NEWS, AND GETTRACTIVE DEALS
+                AND
+                PROMOS!
+            </div>
+            <div class="home_app_container--logo">
+                <a href="https://apps.apple.com/id/app/tix-id/id1362497752"><img
+                        src="../asset/images/home/AppStoreButton.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=id.tix.android&hl=en&gl=US"><img
+                        src="../asset/images/home/PlayStoreButton.png" alt=""></a>
+            </div>
+        </div>
+        <div class="home_our_partners">
+            <div class="home_title">
+                Our Partners
+            </div>
+            <div class="home_out_partners--cinema row">
+                <img class="cinema-item col-3" src="../asset/images/home/metiz.png" alt="">
+                <img class="cinema-item col-3" src="../asset/images/home/galaxy.png" alt="">
+                <img class="cinema-item col-3" src="../asset/images/home/cgv.png" alt="">
+                <img class="cinema-item col-3" src="../asset/images/home/lotte.png" alt="">
+                <img class="cinema-item col-3" src="../asset/images/home/starlight.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script/slide.js" defer></script>
 
 </body>
+<footer id="footer"></footer>
 
 </html>

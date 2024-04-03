@@ -1,322 +1,264 @@
+.home {
+    background-color: #f8f8f8;
+    color: #000;
 
-.container {
+}
+
+
+/* slider */
+
+.slider_card_img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-tab i{
+    top: 50% !important;
+}
+
+.slider-button {
+    color: #000 !important;
+    padding: 1%;
+    font-size: 40px;
+}
+
+/* Cinemas */
+.home_show_cinemas {
+    padding: 80px 14% 40px 14% !important;
+}
+
+.cinemas_name {
+    font-family: MyHeaderFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 20px !important;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* spotlight */
+.home_spotlight {
+    padding: 80px 14% 40px 14% !important;
+    background: linear-gradient(100.46deg, #f9f9f9 0%, #cbcfd1 100%);
+}
+
+.spotlight_name {
+    text-transform: uppercase;
+
+}
+
+/* Tix Now */
+.home_tixnow{
+    padding: 80px 14% !important;
+
+}
+.tixnow_container_posting {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 35px;
     gap: 30px;
 }
 
-.wrapper2 {
-    max-width: 1080px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tixnow_posting--card {
 }
 
-.wrapper2 i {
-    height: 72px;
-    width: 72px;
-    background: #fff;
-    text-align: center;
-    line-height: 72px;
-    border-radius: 50%;
-    color: #333333;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.25rem;
-    transform: translateY(-100%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+.tixnow_posting--card img {
+    border-radius: 10%;
+    height: auto;
+    width: 35%;
 }
 
-.wrapper2 i:first-child {
-    left: -100px;
+.posting_card--title {
+    font-family: MyHeaderFont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
-.wrapper2 i:last-child {
-    right: -100px;
-}
-
-.wrapper2 .carousel2 {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100%/2)- 12px);
-    gap: 80px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: 0;
-}
-
-.carousel2.no-transition {
-    scroll-behavior: auto;
-
-}
-
-.carousel2.dragging {
-    scroll-snap-type: none;
-    scroll-behavior: auto;
-}
-
-.carousel2::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel2.dragging .card {
-    cursor: grab;
-    user-select: none;
-}
-
-.carousel2 .card {
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card2 .img2 img {
-    width: 500px;
-    height: 707px;
-    object-fit: cover;
-    border-radius: 16px;
-    margin-bottom: 52px;
-}
-
-.card2 .namefilm h2 {
-    text-align: center;
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
+.posting_card--date {
+    color: #a5a8ae;
+    font-size: 16px;
+    font-family: MyFooterFont;
     font-weight: 700;
-    word-wrap: break-word;
-    color: #333333;
-    margin-bottom:  24px;
+    margin-bottom: 16px;
+
 }
 
-.card2 .cinema {
+.posting_card--decoration{
+    font-size: 16px;
+    font-family: MyFooterFont;
+}
+
+.tixnow_sidebar--name{
+    color: #000;
+    font-family: MyHeaderFont;
+    font-size: 14px;
+}
+
+.sidebar_li{
+    border-bottom: 1px solid #192c4f;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+}
+
+.sidebar_title{
+    text-decoration: none;
+    color: #000;
+    font-family: MyHeaderFont;
+}
+
+.sliderbar_button{
+    display: inline-block;
+    background: #ffffff;
+    padding: 6px 22px;
+    border: 1px solid #001a3a;
+    box-sizing: border-box;
+    border-radius: 60px;
+    font-family: MyHeaderFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
     text-align: center;
+    text-transform: uppercase;
 }
 
-/* ---------- */
-
-.slider {
-    width: 1296px;
-    width: 100%;
-    max-width: 100vw;
-    height: 304px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+/* Video & trailer */
+.home_video_trailer {
+    padding: 80px 14% 40px 14% !important;
+    background: linear-gradient(299.16deg, #192c4f 30.84%, #145f9f 100%);
 }
 
-.slider .list {
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-}
-
-.slider .list img {
-    width: 1296px;
-    max-width: 100vw;
-    height: 304px;
-    object-fit: cover;
-    border-radius: 16px;
+.home_video_trailer .button-tab {
+    color: #fff !important;
+    border: solid 3px #fff;
 
 }
 
-.buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons i {
-    width: 72px;
-    height: 72px;
-    line-height: 72px;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    top: 50%;
-    font-size: 1.25rem;
-    transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-
-.slider .dots {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
+.home_video_trailer .home_video_trailer--title {
     color: #fff;
+}
+
+.video_card_img {
+    border-radius: 4%;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: auto;
+    position: relative;
+}
+
+.btn_play {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.spotlight_name,
+.video_card_namefilm {
+    font-family: MyHeaderFont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 20px !important;
+    display: block;
+    text-transform: uppercase;
+}
+
+.video_card_namefilm {
+    color: #fff;
+}
+
+/* Our Feature */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: auto !important;
+    height: auto !important;
+    left: none !important;
+    top: 92% !important;
+
+}
+
+.swiper-pagination {
+    bottom: 2em !important;
+}
+
+.frame-tab {
+    margin-bottom:5em;
+}
+
+.button-tab {
+    color: #000 !important;
+    border: solid 3px #000;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 24px;
+}
+
+/* App Store*/
+.home_app_container {
+    padding: 0 15px;
+    padding: 0 14% !important;
+}
+
+.home_app_container--title {
+    color: #000;
+    font-family: MyHeaderFont;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.home_app_container--logo {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    margin: 33px 0;
 }
 
-.slider .dots li {
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
+.home_app_container--logo img {
+    max-width: 171px;
 }
 
-.slider .dots li.active {
-    width: 30px;
+/* Our Partners */
+
+.home_our_partners,
+.home_our_features {
+    padding: 80px 14% !important;
+    padding-bottom: 1.5% !important;
 }
 
-/*  */
-
-.tixnews,
-.tik_film__akan {
-    display: flex;
-    flex-direction: column;
+.home_title {
+    color: #000;
+    font-family: MyHeaderFont;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 0 0 40px;
 }
 
-.news_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cinema-item {
+    margin: 20px 0;
 }
 
-.header_news--left h2 {
-    color: #333333;
-    font-size: 24px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 32px;
-    word-wrap: break-word;
-}
-
-.header_news--left p {
-    color: #5A637A;
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-.header_news--right{
-    text-align: end;
-
-}
-
-.header_news--right a {
-    color: #118EEA;
-    font-size: 24px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 32px;
-    word-wrap: break-word;
-}
-
-.news_list{
-    padding: 0;
-}
-
-.news_card {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    /* margin-bottom: 10%; */
-
-}
-
-.news_card .card_img img {
-    width: 100%;
-    height: 237px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 5%;
-}
-
-.news_card .title_and_tag {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-}
-
-.film-card .title_and_tag{
-    width: 85%;
-}
-
-.news_card .card_spotlight {
-    width: max-content;
-    padding: 8px 12px;
-    color: #333333;
-    font-size: 12px;
-    font-family: Roboto;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: 1px #333D58 solid;
-}
-
-.news_card .card_header ,
-.film-card .film_header{
-    color: #333333;
-    font-size: 24px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 32px;
-    word-wrap: break-word;
-    margin: 5% 0;
-}
-
-.news_card .card_time {
-    color: #5A637A;
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-    margin-top: 4px;
-}
-
-
-/*  */
-.film_list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-
-.film-card {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    /* margin: 10% 0; */
-
-}
-
-.film-card .card_img img {
-    width: 100%;
-    height: 533px;
-    object-fit: cover;
-    border-radius: 12px;
-
-}
-
-.badge{
-    padding: 0 !important;
+/* reponsive */
+@media screen and (max-width: 768px) {
+    .home_title{
+        font-size: 20px;
+    }
 }
